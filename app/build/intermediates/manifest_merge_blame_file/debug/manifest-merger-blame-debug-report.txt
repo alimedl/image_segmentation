@@ -1,0 +1,85 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3 Copyright 2019 The TensorFlow Authors. All Rights Reserved.
+4
+5 Licensed under the Apache License, Version 2.0 (the "License");
+6 you may not use this file except in compliance with the License.
+7 You may obtain a copy of the License at
+8
+9     http://www.apache.org/licenses/LICENSE-2.0
+10
+11 Unless required by applicable law or agreed to in writing, software
+12 distributed under the License is distributed on an "AS IS" BASIS,
+13 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14 See the License for the specific language governing permissions and
+15 limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="org.tensorflow.lite.examples.imagesegmentation"
+19    android:versionCode="1"
+20    android:versionName="1.0" > <!-- Do not remove, it is needed for internal build system -->
+21    <uses-sdk
+21-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:22:5-17
+22        android:minSdkVersion="21"
+22-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:22:5-17
+23        android:targetSdkVersion="29" />
+23-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:22:5-17
+24
+25    <uses-permission android:name="android.permission.CAMERA" />
+25-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:24:3-63
+25-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:24:20-60
+26
+27    <uses-feature android:name="android.hardware.camera.any" />
+27-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:25:3-62
+27-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:25:17-59
+28
+29    <application
+29-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:26:3-43:17
+30        android:allowBackup="true"
+30-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:27:7-33
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.1.0] /Users/medlali/.gradle/caches/transforms-2/files-2.1/2c7f471681a49d63d402f2d17cb4bdb8/core-1.1.0/AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:icon="@mipmap/ic_launcher"
+33-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:28:7-41
+34        android:label="@string/tfe_is_app_name"
+34-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:29:7-46
+35        android:roundIcon="@mipmap/ic_launcher"
+35-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:30:7-46
+36        android:supportsRtl="true"
+36-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:31:7-33
+37        android:theme="@style/AppTheme.ImageSegmentation" >
+37-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:32:7-56
+38        <activity
+38-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:34:9-42:20
+39            android:name="org.tensorflow.lite.examples.imagesegmentation.MainActivity"
+39-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:35:13-41
+40            android:exported="true"
+40-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:37:13-36
+41            android:screenOrientation="portrait" >
+41-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:36:13-49
+42            <intent-filter>
+42-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:38:13-41:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:39:17-69
+43-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:39:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:40:17-77
+45-->/Users/medlali/Desktop/Image_segmentation/app/src/main/AndroidManifest.xml:40:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <provider
+49-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/medlali/.gradle/caches/transforms-2/files-2.1/b3f9fb34b2b953a92e098c181f82f79f/lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+50            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+50-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/medlali/.gradle/caches/transforms-2/files-2.1/b3f9fb34b2b953a92e098c181f82f79f/lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+51            android:authorities="org.tensorflow.lite.examples.imagesegmentation.lifecycle-process"
+51-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/medlali/.gradle/caches/transforms-2/files-2.1/b3f9fb34b2b953a92e098c181f82f79f/lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+52            android:exported="false"
+52-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/medlali/.gradle/caches/transforms-2/files-2.1/b3f9fb34b2b953a92e098c181f82f79f/lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+53            android:multiprocess="true" />
+53-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/medlali/.gradle/caches/transforms-2/files-2.1/b3f9fb34b2b953a92e098c181f82f79f/lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+54    </application>
+55
+56</manifest>
